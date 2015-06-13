@@ -9,7 +9,7 @@
             name="mvo_node"
             type="mono_visual_odometry_bag"
             output="screen">
-    <param name="filename/bag" value="/home/zheng/dataset/india_new_svo/india_Jan19_run1.bag"/>
+    <param name="filename/bag" value="/home/odroid/dataset/india_new_svo/india_Jan19_run1.bag"/>
     <rosparam file="$(find mono_visual_odometry)/config/mvo_india_para.yaml"/>
     </node>
 
