@@ -1,0 +1,16 @@
+<launch>
+
+<arg name="bagfile" default="mvo_bag"/>
+
+
+  <node pkg="rosbag"
+        type="record"
+        name="record"
+        output="screen"
+        args="-O /home/zheng/dataset/$(arg bagfile)
+        /hummer/sync/image_rect
+        /hummer/sync/gpio_time
+        /hummer/imu
+  />
+
+</launch>
